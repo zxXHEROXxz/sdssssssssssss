@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/page_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+}
+
+div.item {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: coral;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+    --offset: 1;
+    background-color: #90f1ef;
+}
+
+div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #ff70a6;
+}
+
+div.item:nth-of-type(3) {
+    --offset: 3;
+    background-color: #ff9770;
+}
+
+div.item:nth-of-type(4) {
+    --offset: 4;
+    background-color: #ffd670;
+}
+
+div.item:nth-of-type(5) {
+    --offset: 5;
+    background-color: #e9ff70;
+}
+
+.demo-photo-card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    /* background: linear-gradient(to bottom, #8d87ad, #7ee4f7); */
+    background-clip: border-box;
+    /* border: 1px solid rgba(0, 0, 0, .125); */
+    border-radius: 0.25rem;
+}
+
+.reservation-button {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: #0b92aa;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.reservation-button:hover {
+    background-color: #127688;
+    color: #000 !important;
+}
+
+.reservation-button:hover a,
+.reservation-button:hover button {
+    color: #000 !important;
+}
+
+.reservation-button a,
+.reservation-button button {
+    color: #fff;
+}
+
+.radio-spacing {
+    margin-right: 10px;
+}
+
+
+
+

@@ -1,0 +1,22 @@
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    }
+    
+    .loader img {
+    width: 650px;
+    height: 550px;
+    }
+    
+    .content {
+    display: none;
+    }

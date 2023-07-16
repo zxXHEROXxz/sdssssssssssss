@@ -1,0 +1,8 @@
+body {
+    background-image: url('../images/maintenance.gif');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+

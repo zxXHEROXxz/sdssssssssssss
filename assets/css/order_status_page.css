@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/page_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 100px auto;
+  }
+  
+  .card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+  }
+  
+  th.text-center,
+  td.text-center {
+    text-align: center;
+  }
+  
+  .d-flex.justify-content-center {
+    justify-content: center;
+  }

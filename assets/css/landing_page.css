@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* ../ used to locate the image from the folder */
+    background-image: url('../images/home_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.studio-package {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #2db6ff, #c24bff);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.package-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.package-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.package-card-content {
+    flex-grow: 1;
+}
+
+.view-details-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b92aa;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.view-details-btn a:hover {
+    background-color: #127688;
+    box-shadow: none; 
+}
+
+.login-register-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.login-register-button a {
+    padding: 10px 20px;
+    background-color: #0b92aa;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-register-button a:hover {
+    background-color: #127688;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row.justify-content-center.mt-5 { 
+    margin-top: 12rem !important;
+}
+
+
+
